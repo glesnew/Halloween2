@@ -1,0 +1,56 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <input type ="number" ng-model = "quantity" placeholder="Quantity" />
+      <input type ="number" ng-model="cost" placeholder="cost" />
+      <h2>
+          {{quantity*cost}}
+      </h2>
+    <h3>
+        <div>
+            <label>noun:</label>
+            <input type="text" ng-model="noun"/>
+            <label>verb:</label>
+            <input type="text" ng-model="verb"/>
+        </div>
+        <div>
+         I just 
+         <span ng-if="verb"> {{verb}}</span>
+         <span ng-if"noun"> {{noun}} </span>
+        </div>
+        <br>
+        <div>
+            <label>What do you like to eat?</label>
+            <br>
+            <input type="text" ng-model="food"/>
+            <span ng-if"food"> {{food}} </span> will give you scurvy!
+            <hr>
+        </div>
+        <div>
+            <label>How many cats do you have?</label>
+            <input type="number" ng-model="cats"/>
+            <br>
+            That's <span ng-if"cats"> {{cats * 9}} lives!</span>
+            <hr>
+        </div>
+        <Div>
+            <label>Do you like cats?</label>
+            <br>
+            <input type="text" ng-model="like"/>
+            That is <span ng-if"text">{{like.toLowerCase==='yes'}}</span>
+        </Div>
+    </h3>
+
+      <hr>
+
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  </body>
+</html>
